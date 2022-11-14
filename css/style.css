@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -6,154 +6,352 @@
   list-style: none;
 }
 
-.skip a{
+html {
+  scroll-behavior: smooth;
+}
+
+.skip a {
   position: absolute;
   color: black;
   top: -40px;
 
 }
 
-.skip a:focus{
+.skip a:focus {
   position: absolute;
-  top:0;
+  top: 0;
   color: black;
 }
 
-body {
-    max-height: 667px;
-    background-size: cover;
-    background-image: url('/images/homebg.svgh');
-    font-family:'Josefin Sans';
+/* Mobile view starts*/
+@media all and (max-width: 799px) {
+  body {
+    font-family: 'Josefin Sans';
     font-weight: 300;
     color: #3D4856;
+    display: grid;
+    grid-template-rows: auto 1fr 80px 80px;
+     /* repeat(auto-fit, minmax(350px, 1fr)); */
+    grid-gap: 1rem;
+    float: left;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  header {
+  grid-row:1/span 1;
+  background: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* height: 200px; */
+  }
+
+  nav {
+    display: inline-block;
+    /* height: 80px; */
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 30px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    color: #008080;
+    font-weight: 400;
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
+
+  .navbar_Item_active:focus {
+    background-color: #008080;
+    color: white;
+  }
+
+  h1.design_impact {
+    color: #008080;
+    font-weight: 350;
+    font-size: 4em;
+    padding: 0% 3%;
+  }
+
+  .intro_info_impact {
+    padding: 5% 3%;
+    border: 0.2em solid #008080;
+    font-weight: 500;
+    color: #3D4856;
+    font-size: large;
+    animation-name:glow;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  .intro_info_impact:hover {
+    transform: scale(1.04);
+    box-shadow: 10px 5px 5px #00808070;
+  }
+
+  .home_background_image {
+    min-height: 10%;
+    max-height: 100%;
+    min-width: 10%;
+    max-width: 100%;
+    padding: 5% 2%;
+  }
+
+  .portfolio_brief {
+    padding: 5% 5%;
+    font-size: 30px;
+
+  }
+
+  .activity_flex{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  main{
+    grid-row: 2 /span 1;
+  }
+
+  aside{
+    grid-row: 3/ span 1;
+  }
+  footer{
+    grid-row: 4/ span 1;
+  }
+
+  .about_text_over_img
+  {
+    background-image: url("../images/about-photo_brushEdited.png");
+    background-size: cover;
+    height: 70vh;
+    color: #FFFFFF;
+    font-weight:500;
+    align-content:center;
+    margin: 2%;
+  }
+  .about_text_over_img p{
+    border: 1px white solid;
+    background-color: #3D485670;
+    padding: 2%;
+    position: relative;
+    top: 60%;
+  }
 }
 
-header {
+/*mobile view ends*/
+
+
+/*Desktop view starts*/
+@media all and (min-width: 800px) {
+  body {
+    max-height: 667px;
+    background-size: cover;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    color: #3D4856;
+    display: grid;
+    grid-template-rows: auto auto 80px 80px;
+  }
+
+  header {
+    grid-row: 1 /span 1;
     background-color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-}
+  }
 
-nav{
-  /*background-color: bisque;*/
-  display: inline-block;
-  height: 80px;
-  width: 100%;
-}
+  nav {
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+  }
 
-nav ul{
-  float: right;
-  margin-right: 30px;
-}
+  nav ul {
+    float: right;
+    margin-right: 30px;
+  }
 
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 10px;
-}
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+  }
 
-nav ul li a{
-  font-size: 20px;
-  color: #008080;
-  font-weight: 400;
-  padding: 15px 30px;
-  border-radius: 50px;
-}
+  nav ul li a {
+    font-size: 20px;
+    color: #008080;
+    font-weight: 400;
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
 
-.navbar_Item_active:hover{
+  .navbar_Item_active:focus {
     background: #008080;
     color: white;
-    /*transition: 0.3s; Transition was added purely out of curiosity knowing that it is yet to be handled in the syllabus */
+  }
+
+  .index_main {
+grid-row: 2/span 1;
+    margin-top: 80px;
+    float: left;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1.design_impact {
+    color: #008080;
+    font-weight: 350;
+    font-size: 4em;
+    padding: 0% 3%;
+  }
+
+  .intro_info_impact {
+    padding: 5% 3%;
+    border: 0.2em solid #008080;
+    font-weight: 500;
+    color: #3D4856;
+    font-size: large;
+  }
+
+  .home_background_image {
+    min-height: 10%;
+    max-height: 100%;
+    min-width: 10%;
+    max-width: 100%;
+    padding: 5% 2%;
+  }
+
+  .portfolio_brief {
+    padding: 5% 5%;
+    font-size: 30px;
+  }
+
+  .activity_flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .navbar_Item_active:hover {
+    border: 0.05em #008080 solid;
+    transition: border 100ms ease-in 10ms;
+  }
+
+  aside{
+    grid-row: 3 /span 1;
+  }
+
+  footer{
+    grid-row: 4/ span 1;
+  }
+
 }
 
-.navbar_Item_active:focus{
-  background: #008080;
+/*Desktop view ends*/
+
+.navbar_Item_active.activated {
+  background-color: #008080;
+  opacity: 1;
   color: white;
 }
 
-.index_main{
-  margin-top: 80px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 3fr 1fr;
-  float: left;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
+.leisure_gallery_image {
+  height: 300px;
+  width: auto;
+  overflow: hidden;
+  margin: 2%;
+  padding: 0.5%;
+  opacity: 0.85;
 }
 
-h1.design_impact{
-  color:#008080;
-  font-weight: 350;
-  font-size: 4em;
-  grid-row: 1 / span 1;
-  padding: 0% 3%;
-}
-
-.intro_info_impact{
-  grid-row: 2 / span 1;
-  padding: 5% 3%;
-  border: 0.2em solid #008080;
-  font-weight: 500;
-  color: #3D4856;
-  font-size: large;
-}
-
-.home_background_image{
-  min-height: 10%;
-  max-height: 100%;
-  min-width: 10%;
-  max-width: 100%; 
-  grid-row: 3 / span 1;
-  padding: 5% 2%;
-}
-
-.portfolio_brief{
-  grid-row: 4 / span 1;
-  padding: 5% 5%;
-  font-size: 30px;
-
-}
-
-.leisure_gallery_image{
-min-height: 10%;
-min-width: 30%;
-max-height: 70%;
-max-width: 70%;
-margin:2%;
-padding:0.5%;
-opacity: 0.85;
-}
-.leisure_gallery_image:hover
-{
+.leisure_gallery_image:hover {
   transform: scale(1.2);
   overflow: hidden;
-  opacity:1;
+  opacity: 1;
   padding: 1%;
-  border:1.5px solid #008080;
+  border: 1.5px solid #008080;
 }
 
-.photo_hiking{
-  border:1px dashed #3D4856;
+.photo_hiking {
+  border: 1px dashed #3D4856;
 }
 
-.photo_game{
-  border:1px dashed #CEA746;
+.photo_game {
+  border: 1px dashed #CEA746;
 }
 
-.photo_dogs{
-  border:1px dashed maroon;
+.photo_dogs {
+  border: 1px dashed maroon;
 }
 
-.photo_origami{
-  border:1px dashed mediumspringgreen;
+.photo_origami {
+  border: 1px dashed mediumspringgreen;
 }
 
-.leisure_image_captions
-{
+.gallery_item {
+  margin: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:center;
+}
+
+.gallery_item figcaption{
+  width: 300px;
   font-weight: 350;
 }
 
+h2{
+  font-weight: 400;
+  font-size: 2rem;
+  color: #008080;
+}
+
+section{
+  border: 0.5px #3D4856 solid;
+  margin: 5% 2%;
+}
+
+
+@keyframes glow {
+  0% {
+      transform: scale(.5);
+      background-color: #FFFFFF;
+  }
+
+  50% {
+      background-color: #00808040;
+  }
+
+  100% {
+      transform: scale(1.);
+      background-color:  #00808020;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}
