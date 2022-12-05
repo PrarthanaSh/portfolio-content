@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- All of the meta data for the page belongs in the header tag -->
 
 <head>
 	<meta charset="UTF-8">
@@ -10,46 +9,94 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Portfolio | Prarthana Shevatekar | Leisure</title>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJT90FHLW8"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-GJT90FHLW8');
+</script>
 
 <body>
-	<header>
-		<nav>
-			<a href="index.html"><img src="images/index_name_signage.png" alt="Prarthana Shevatekar"></a>
-			<ul>
-				<li><a href="index.html" class="navbar_Item_active">Home</a></li>
-				<li><a href="work.html" class="navbar_Item_active">Work</a></li>
-				<li><a href="leisure.html" class="navbar_Item_active">Leisure</a></li>
-				<li><a href="about.html" class="navbar_Item_active activated">About</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-
-		<div class="about_text_over_img">
-		<p>
-			When I engage in designing for impact, I put the environment first in my sensitization of values. Belonging
-			to a generation that saw revolutionary transformations, I believe I am responsible for both the ecological
-			imbalance and for restoring it. It generates a juxtaposition of generating impactful designs for reducing
-			adverse impact on the environment.
-		</p>
-		<!-- <figure>
-			<img src="images/about-photo_brushEdited.png" alt="Artistic image of a smiling woman">
-		</figure> -->
-		<!-- <div class="about_text_over_img">
-				<h1>About me</h1>
+	<div class="pageGridContainer">
+		<header>
+			<a class="skip-link" href='#main'>Skip to content</a>
+			<nav>
+				<div class="logo">
+					<a href="index.html"><img src="images/index_name_signage.png" alt="Prarthana Shevatekar"></a>
+				</div>
+				<ul id="menu">
+					<li><a href="index.html" class="navbar_Item_active">Home</a></li>
+					<li><a href="work.html" class="navbar_Item_active">Work</a></li>
+					<li><a href="leisure.html" class="navbar_Item_active">Leisure</a></li>
+					<li><a href="about.html" class="activated navbar_Item_active">About</a></li>
+				</ul>
+				<a href="#" class="burgermenu">&#9776;</a> <!-- HTML entity for hamburger icon  -->
+			</nav>
+		</header>
+		<main id="main">
+			<div class="aboutMainWrapper">
+			<div class="aboutImg">
+				<figure>
+					<img src="images/about-photo_brushEdited.png" alt="Artistic image of a smiling woman">
+				</figure>
+			</div>
+			<div class="aboutDescription">
 				<p>
+					When I engage in designing for impact, I put the environment first in my sensitization of values.
+					Belonging to a generation that saw revolutionary transformations, I believe I am responsible for
+					both the ecological imbalance and for restoring it. It generates a juxtaposition of generating
+					impactful designs for reducing adverse impact on the environment.
 					I am a believer of the tiny-karma philosophy. This is derived from the Hindu epic called
 					Mahabharata. "Every little action adds up to a bigger outcome. Nothing ever goes fully unnoticed."
 					This thought motivates me to be mindful about my habits, routine and my work ethics.
 				</p>
-		</div> -->
+			</div>
+		</div>
+		</main>
+		<aside>
+			<div class="contactTitle">
+				<h1>Contact Form</h1>
+			</div>
+				<form id="contactForm" action="https://formspree.io/f/xaykzgzb" method="POST">
+					<div class="formFields">
+						<!-- <legend>Contact Form</legend> -->
+						<label>Name: </label>
+						<input type="text" name="name" placeholder="Your full name goes here" required class="formControl" />
+						<label>Email: </label>
+						<input type="email" name="email" placeholder="exampleid@somedomain.com" class="formControl" />
+						<label>Phone Number(You don't have to): </label>
+						<input type="text" name="phone" placeholder="Please add your country code too" class="formControl" />
+						<label>Message: </label>
+						<textarea name="message" rows="4" class="formControl" required placeholder="Criticism is joyfully welcomed"></textarea>
+						<button id="my-form-button" type="submit">Send</button>
+						<p id="my-form-status"></p>
+					</div>
+				</form>
+			
+			<div class="social">
+				<form action="#main">
+					<div class="contactTitle">
+						<h1>Social Media</h1>
+					</div>
+						<ul>
+							<li><a href="https://www.linkedin.com/in/prarthana-shevatekar/" target="_blank"><img
+										src="images/linkedin.svg" /></a></li>
+							<li><a href="mailto:prarthana.2807@gmail.com"><img src="images/mail.svg" /></a></li>
+							<li><a href="https://www.instagram.com/prartha_nerd/" target="_blank"><img
+										src="images/instagram.svg" /></a></li>
+						</ul>
+				</form>
+			</div>
+		</aside>
+		<footer>
+			<p>&copy; 2022 | Designed with lots of coffee and countless hours of troubleshooting
+				<span><i class="fa fa-light fa-mug-hot"></i></span>
+			</p>
+		</footer>
 	</div>
-	</main>
-
-	<footer>
-		&copy; 2022 | Designed with lots of coffee and troubleshooting
-	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -10,21 +10,33 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Portfolio | Prarthana Shevatekar | Leisure</title>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJT90FHLW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GJT90FHLW8');
+</script>
 
 <body>
 	<header>
+		<a class="skip-link" href='#main'>Skip to content</a>
 		<nav>
-			<a href="index.html"><img src="images/index_name_signage.png" alt="Prarthana Shevatekar"></a>
-			<ul>
+			<div class="logo">
+				<a href="index.html"><img src="images/index_name_signage.png" alt="Prarthana Shevatekar"></a>
+			</div>
+			<ul id="menu">
 				<li><a href="index.html" class="navbar_Item_active">Home</a></li>
 				<li><a href="work.html" class="navbar_Item_active">Work</a></li>
 				<li><a href="leisure.html" class="navbar_Item_active activated">Leisure</a></li>
 				<li><a href="about.html" class="navbar_Item_active">About</a></li>
 			</ul>
+			<a href="#" class="burgermenu">&#9776;</a> <!-- HTML entity for hamburger icon  -->
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<h1>I engage in a few different activities that help me decompress. Here are glimpses of things that I love to
 			do, on slower days.</h1>
 
@@ -38,7 +50,6 @@
 						<figcaption>One day trek to Triund top, Himachal Pradesh. The day brings back memories of my
 							first snowfall, a chilly nose and 14 kilometers of dense silence.</figcaption>
 					</figure>
-
 				</div>
 
 				<div class="gallery_item">
@@ -49,7 +60,6 @@
 						<figcaption>That day, I discovered a lake inside a fort, on a hilltop. The descent was done with
 							languid reluctance.</figcaption>
 					</figure>
-
 				</div>
 
 				<div class="gallery_item">
@@ -60,7 +70,6 @@
 						<figcaption>Monsoons bring together lost friends in the Sahyadri. Twin fortresses of Visapur and
 							Lohgad were explored.</figcaption>
 					</figure>
-
 				</div>
 			</div>
 		</section>
@@ -75,7 +84,6 @@
 						<figcaption>Body smashes feel challenging, even when the shuttle is well within reach.
 						</figcaption>
 					</figure>
-
 				</div>
 
 				<div class="gallery_item">
@@ -155,6 +163,7 @@
 	<footer>
 		&copy; 2022 | Designed with lots of coffee and troubleshooting
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

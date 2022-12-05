@@ -10,74 +10,87 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Portfolio | Prarthana Shevatekar | Work</title>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJT90FHLW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GJT90FHLW8');
+</script>
 
 <body>
-	<header>
-		<nav>
-			<a href="index.html"><img src="images/index_name_signage.png" alt="Prarthana Shevatekar"></a>
-			<ul>
-				<li><a href="index.html" class="navbar_Item_active">Home</a></li>
-				<li><a href="work.html" class="navbar_Item_active activated">Work</a></li>
-				<li><a href="leisure.html" class="navbar_Item_active">Leisure</a></li>
-				<li><a href="about.html" class="navbar_Item_active">About</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="pageGridContainer">
+		<header>
+			<a class="skip-link" href='#main'>Skip to content</a>
+			<nav>
+				<div class="logo">
+					<a href="index.html"><img src="images/index_name_signage.png" alt="Prarthana Shevatekar"></a>
+				</div>
+				<ul id="menu">
+					<li><a href="index.html" class="navbar_Item_active">Home</a></li>
+					<li><a href="work.html" class="navbar_Item_active activated">Work</a></li>
+					<li><a href="leisure.html" class="navbar_Item_active">Leisure</a></li>
+					<li><a href="about.html" class="navbar_Item_active">About</a></li>
+				</ul>
+				<a href="#" class="burgermenu">&#9776;</a> <!-- HTML entity for hamburger icon  -->
+			</nav>
+		</header>
 
-	<main>
+
+	<main id="main">
 		<h1>Projects</h1>
-		<h2>Gamified e-learning</h2>
-		<p>
-			A prominent FinTech organization from Abu Dhabi approached the firm I am working with, to generate
-			e-learning courses that will act as basic introduction to FinTech and associated concepts. The requirement
-			was primarily to engage the audience with gamification.
-		</p>
-		<h3>Preliminary research </h3>
-		<ol>
-			<li>The scope and nature of content to be presented was identified through multiple discussions</li>
-			<li>Detailed audience analysis was carried out by understanding the value proposition.</li>
-		</ol>
-		<h3>Preliminary research </h3>
-		<ol>
-			<li>Current (2018-) FinTech scenario in the middle east was studied to present case studies and relevant
-				local examples in the course.</li>
-			<li>Present learning management system (where the course would be deployed) was identified and studied</li>
-		</ol>
-
-		<figure>
-			<img src="images/work_brainstorming.png" width="500" alt="Image of handwritten notes">
-			<figcaption>Notes from a brainstorming session</figcaption>
-		</figure>
-		<p>Various examples from the textile industry were quoted to assist the learner in drawing parallels between
-			structured and unstructured data.</p>
-		<figure>
-			<img src="images/work_analogy1_bigdata.png" width="500"
-				alt="Screenshot explaining structured big data with tailorin example">
-			<figcaption>Deriving analogies to explain concepts</figcaption>
-		</figure>
-		<figure>
-			<img src="images/work_analogy2_bigdata.png" width="500" alt="Screenshot explaining unstructured data">
-			<figcaption>Deriving analogies to explain concepts</figcaption>
-		</figure>
-		<p>
-			Structuring lessons to enable scaffolding technique (gradually increasing difficulty level and decreasing
-			hints, solutions to help learner achieve subject mastery)</p>
-		<figure>
-			<img src="images/work_scaffolding_AI.png" width="500" alt="Photo explainging scaffolding technique">
-			<figcaption>User was asked to pick an option based on inferencing. Previous lesson explained the differences
-				between structured and semi structured data.</figcaption>
-		</figure>
-		<figure>
-			<img src="images/work_scaffolding_levels.png" width="500"
-				alt="Explaination of scaffolding method with levels in a game">
-			<figcaption>Another example of scaffolding. Learner was introduced to rounds of information, following by
-				one round of tackling an opponent – time.</figcaption>
-		</figure>
+		<div class="projectContainer">
+		<div class="projects project1">
+			<div class="projectTitles">
+				<h2>Gardening Angel</h2>
+			</div>
+			<img src="images/work_project1_UserSegmentation.png" alt="Table describing three different user categories">
+			<p class="projectDescription"> In a post-oandemic era, activities that are mindful, grounding and tethering people to the community have gained more importance. For me, gardening is one of them. However community gardens in India are rare to find. Thsi project explores the solution space of intriducing a digital platform that encourages and supports both home gardening and community gardening. </p>
+		</div>
+		<div class="projects project2">
+			<div class="projectTitles">
+				<h2>Trash Talk</h2>
+			</div>
+			<img src="images/work_project2_TrashTalk.png" alt="Different snapshots of mobile applications screens">
+			<p class="projectDescription">
+				Muncipal Solid Waste is a huge threat to our environment. It is a burgeoning and alarming concern that often gets overlooked in the throes of progress. As a group of four, we explore the digital solution space to engage users in a gamified app that encourages them to manage their day-to-day waste better. Based on the fundamentals of reusing, donation and responsible consumerism, the app allows the user to visually see the impact they are making.
+			</p>
+		</div>
+		<div class="projects project3">
+			<div class="projectTitles">
+				<h2>Plastic Collection Kiosk</h2>
+			</div>
+			<img src="images/work_project3_Planet.png" alt="Picture of earth overlayed by text - I save the planet">
+			<p class="projectDescription">
+				Recycling plastics as far as possible is the need of the hour. Introducing this concept into the younger generations, especially school children that are in their growing phases of developing a morale, is a critically important part of public awareness. In addition to academia, this kiosk, projected to be installed in schools, will create an activism in kids to collect plastic waste through the means of accountability and reward incentives like badges.
+			</p>
+		</div>
+	</div>
 	</main>
 
+	<aside>
+		<p>
+			My work draws from a wide range of skills that I have picked up both as part of academia, and my corporate experience.
+			While I do not follow a rigid design framework, here are some of the skills that have proven to be useful in my design process:
+		</p>
+		<ol>
+			<li><h2>Brainstorming</h2></li>
+			<li><h2>Heuristic evaluation</h2></li>
+			<li><h2>Information architecture</h2></li>
+			<li><h2>Wireframing</h2></li>
+			<li><h2>Iterative usability testing</h2></li>
+		</ol>
+	</aside>
+
 	<footer>
-		&copy; 2022 | Designed with lots of coffee and troubleshooting
+		<p>&copy; 2022 | Designed with lots of coffee and countless hours of troubleshooting
+			<span><i class="fa fa-light fa-mug-hot"></i></span>
+		</p>
 	</footer>
+</div>
+<script src="js/script.js"></script>
+
 </body>
 
 </html>
