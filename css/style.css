@@ -68,6 +68,17 @@ header {
     line-height: 80px;
 }
 
+#toast{
+    visibility: hidden;
+}
+
+
+
+/* .homeEnvImage:hover{
+Add code here for hover 
+} */
+
+
 /* Navigation Bar styling */
 nav ul {
     list-style: none;
