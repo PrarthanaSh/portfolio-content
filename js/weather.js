@@ -51,5 +51,5 @@ function processWeatherData(response) {
     setTimeout(function(){ toast.style.visibility = toast.style.visibility.replace("visible", "hidden"); }, 2100);
   }
 
-let fetchButton = document.getElementById("weatherReport");
+let fetchButton = document.getElementById("sunOverlay");
 fetchButton.addEventListener("click", fetchClickHandler);
