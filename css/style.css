@@ -1,4 +1,4 @@
-/* Default code */
+/* Mobile-first deault code starts*/
 
 * {
     margin: 0;
@@ -36,14 +36,16 @@ h1 {
     margin: 16px 0;
     line-height: 4rem;
     font-weight: 300;
+    font-size: 48px;
+    color: teal;
 }
 
 h2 {
-line-height: 2rem;
-font-size: 28px;
-font-weight: 350;
-background-color: aquamarine;
-padding: 5px;
+    line-height: 2rem;
+    font-size: 28px;
+    font-weight: 350;
+    background-color: aquamarine;
+    padding: 5px;
 }
 
 p {
@@ -64,10 +66,9 @@ figcaption {
 
 header {
     line-height: 80px;
-    /* text-align: center; */
 }
 
-/* Navigation Bar */
+/* Navigation Bar styling */
 nav ul {
     list-style: none;
 }
@@ -107,12 +108,10 @@ nav ul li {
     padding: 0 20px;
 }
 
+/* Navigation Bar styling*/
 
-/* Navigation Bar */
-
-h1 {
-    font-size: 48px;
-    color: teal;
+.homeEnvImage img {
+    transform: scaleX(-1);
 }
 
 aside,
@@ -125,7 +124,7 @@ main {
     margin-top: 64px;
 }
 
-
+/* Mobile view grid */
 .pageGridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 80px auto auto 80px;
@@ -136,42 +135,82 @@ aside,
 main,
 footer {
     grid-column: span 1;
-    /* padding: 64px; */
 }
+
+/* Mobile view grid */
+
 .navbar_Item_active:focus {
-    background: #008080;
+    background: teal;
     color: white;
 }
 
-.quoteMarks{
-    font-family:'Times New Roman', Times, serif;
+.quoteMarks {
+    font-family: 'Times New Roman', Times, serif;
     color: teal;
     font-size: 60px;
 }
 
-.pullquote{
-    font-size: 24px;
+.pullquote {
+    font-size: 28px;
     font-weight: 400;
-    border: 1.5px #3D4856 solid;
-    padding: 4px 20px 0 15px;
+    border: 0.75px #3D4856 solid;
+    box-sizing: content-box;
+    padding: 30px 50px;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    background-color: #FFF;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
 }
 
-aside{
+.quoteLines p {
+    display: block;
+    align-content: center;
+    animation: rotateLines 10s infinite;
+}
+
+.quoteLines {
+    overflow: hidden;
+}
+
+@keyframes rotateLines {
+    0% {
+        transform: translateY(0%);
+    }
+
+    30% {
+        transform: translateY(0%);
+    }
+
+    60% {
+        transform: translateY(-150%);
+    }
+
+    80% {
+        transform: translateY(-350%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+aside {
     background-color: #FFFFF0;
 }
 
-.contactLink a{
-    color:#3D4856;
+.contactLink a {
+    color: #3D4856;
 }
 
-.LearnMore{
-    background-color: #008080;
+.LearnMore {
+    background-color: teal;
     border-radius: 50px;
     color: #fff;
     padding: 12px 50px;
 }
 
-footer{
+footer {
     background-color: #3D4856;
     color: white;
     padding: 20px 10px;
@@ -181,33 +220,29 @@ footer{
     justify-content: center;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
-.aboutImg{
+
+.aboutImg {
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
 }
-.social ul{
-    list-style: none;
-    display: inline-flex;
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
-    row-gap: 70px;
-} 
 
-.social ul li img{
-    width: 60px;
-    margin: 30px;
+.aboutMainWrapper {
+    margin-top: 0px;
 }
-/* Default Code */
+
+.portfolioBrief {
+    margin: 64px 0;
+}
 
 /* Form styling */
-.contactTitle, .social{
+.contactTitle,
+.social {
     text-align: center;
     margin-top: 50px;
     text-transform: uppercase;
@@ -215,7 +250,7 @@ img{
     transition: all 2s ease-in-out;
 }
 
-.contactTitle h1{
+.contactTitle h1 {
     font-size: 24px;
     font-weight: 350;
     line-height: 3;
@@ -223,12 +258,13 @@ img{
     border-bottom: 1.3px solid aquamarine;
 }
 
-form{
+form {
     margin-top: 50px;
     transition: all 2s ease-in-out;
 
 }
-.formControl{
+
+.formControl {
     width: 100%;
     background: transparent;
     border: none;
@@ -243,21 +279,17 @@ form{
     font-weight: 300;
 }
 
-form label{
+form label {
     font-size: 20px;
     font-weight: 400;
-    color: #3D4856; 
+    color: #3D4856;
 }
 
-.aboutMainWrapper{
-    margin-top: 0px;
-}
-
-input{
+input {
     height: 32px;
 }
 
-#my-form-button{
+#my-form-button {
     color: #FFF;
     font-size: 24px;
     font-family: 'Josefin Sans', sans-serif;
@@ -271,6 +303,21 @@ input{
     background-color: teal;
     width: fit-content;
 }
+
+.social ul {
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 70px;
+}
+
+.social ul li img {
+    width: 60px;
+    margin: 30px;
+}
+
 /* Form styling */
 
 /* Leisure Page default styling */
@@ -281,62 +328,63 @@ input{
     margin: 2%;
     padding: 0.5%;
     opacity: 0.85;
-  }
-  
-  .leisure_gallery_image:hover {
+}
+
+.leisure_gallery_image:hover {
     transform: scale(1.2);
     overflow: hidden;
     opacity: 1;
     padding: 1%;
-    border: 1.5px solid #008080;
-  }
-  
-  .photo_hiking {
+    border: 1.5px solid teal;
+}
+
+.photo_hiking {
     border: 1px dashed #3D4856;
-  }
-  
-  .photo_game {
+}
+
+.photo_game {
     border: 1px dashed #CEA746;
-  }
-  
-  .photo_dogs {
+}
+
+.photo_dogs {
     border: 1px dashed maroon;
-  }
-  
-  .photo_origami {
+}
+
+.photo_origami {
     border: 1px dashed mediumspringgreen;
-  }
-  
-  .gallery_item {
+}
+
+.gallery_item {
     margin: 3%;
     display: flex;
     flex-flow: column nowrap;
-    align-items:center;
-  }
+    align-items: center;
+}
 
-  .activity_flex {
+.activity_flex {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-  }
-  
-  .gallery_item figcaption{
+}
+
+.gallery_item figcaption {
     width: 300px;
-  }
+}
 
-  /* Leisure page default Styling */
+/* Leisure page default Styling */
 
 
-  /* Work page default styling */
-.projects{
+/* Work page default styling */
+.projects {
     border: 0.5px solid #3D4856;
     padding: 10px;
 }
-.projects img{
-margin-bottom: 30px;
+
+.projects img {
+    margin-bottom: 30px;
 }
 
-.projectTitles{
+.projectTitles {
     height: 100px;
     text-align: center;
     display: flex;
@@ -347,25 +395,28 @@ margin-bottom: 30px;
     margin-bottom: 30px;
 }
 
-ol h2{
+ol h2 {
     background-color: transparent;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
-ol{
+ol {
     list-style-type: style;
-    list-style:decimal;
+    list-style: decimal;
 }
 
-  /* Work page default styliling */
+/* Work page default styliling */
+
+/* Mobile-first deault code ends*/
 
 
-/* mobile code specific for nav bar*/
-@media screen and (max-width: 740px) {
+/* Mobile breakpoint specific for nav bar*/
+@media screen and (max-width: 739px) {
     nav ul {
         display: none;
         width: 40vh;
-        background-color: #008080;
+        background-color: teal;
         opacity: 0.9;
         position: absolute;
         top: 80px;
@@ -375,23 +426,19 @@ ol{
         box-shadow: -2px 2px 20px 2px #3D4856;
     }
 }
-/* mobile code specific for nav bar*/
 
-/* Desktop code  */
+/* Mobile breakpoint specific for nav bar*/
+
+/* Desktop breakpoint  */
 @media screen and (min-width: 899px) {
-/* Checking for tablet breakpoint */
 
     .pageGridContainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* grid-auto-rows: minmax(auto,80px); */
         grid-template-rows: 80px auto 80px;
-
-        /* remove this later */
-        /* height: 100vh; */
     }
 
-    .projectContainer{
+    .projectContainer {
         display: grid;
         grid-template-columns: 2;
         grid-template-rows: 2;
@@ -399,24 +446,20 @@ ol{
         row-gap: 50px;
     }
 
-    .project1{
+    .project1 {
         grid-column: 1/span 1;
         grid-row: span 1;
     }
-    .project2{
+
+    .project2 {
         grid-column: 2/span 1;
         grid-row: span 1;
     }
-    .project3{
+
+    .project3 {
         grid-column: 1/span 1;
         grid-row: span 2;
     }
-
-    .activity_flex {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-      }
 
     header {
         grid-column: span 3;
@@ -436,90 +479,72 @@ ol{
         grid-column: span 3;
     }
 
-    /* nav {
-        position: sticky;
-    }
-
-    a.burgermenu {
-        display: none;
-    }
-
-    nav ul li {
-        display: inline;
-
-    }
-
-    nav ul li a {
-        font-size: 24px;
-        color: #008080;
-        border-radius: 50px;
-        padding: 15px 10px;
-    }
-
-    nav ul {
-        display: block;
-    } */
-
     .navbar_Item_active:hover {
-        border: 0.05em #008080 solid;
+        border: 0.05em teal solid;
     }
 
 
 }
-/*desktop code*/
+
+/*Desktop breakpoint*/
 
 
-    /* Checking for tablet breakpoint */
-    @media screen and (min-width: 741px) and (max-width: 898px){
+/* Tablet breakpoint */
+@media screen and (min-width: 740px) and (max-width: 898px) {
 
-        .pageGridContainer
-        {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 80px auto 80px;
-    
-        }
-    
-        .projectContainer{
-            display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            row-gap: 50px;
-        }
+    .pageGridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px auto 80px;
 
-        header{
-            grid-column: span 2;
-       }
-       
-       aside{
-           grid-column: span 1;
-           background-color: #FFFFF0;
-       }
-       
-       main{
-           grid-column: span 1;
-       }
-       
-       footer{
-           grid-column: span 2;
-       }
+    }
 
-       .project1{
+    header {
+        grid-column: span 2;
+    }
+
+    aside {
+        grid-column: span 1;
+        background-color: #FFFFF0;
+    }
+
+    main {
+        grid-column: span 1;
+    }
+
+    footer {
+        grid-column: span 2;
+    }
+
+    .projectContainer {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+    }
+
+    .project1 {
         grid-row: span 1;
     }
-    .project2{
+
+    .project2 {
         grid-row: 2/ span 1;
     }
-    .project3{
+
+    .project3 {
         grid-row: 3/ span 1;
     }
-    }
+}
 
-    @media screen and (min-width: 741px){
+/* Tablet breakpoint */
+
+
+/* Common code for both tablet and desktop - navbar*/
+@media screen and (min-width: 740px) {
     .activity_flex {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-      }
+    }
 
     nav {
         position: sticky;
@@ -536,7 +561,7 @@ ol{
 
     nav ul li a {
         font-size: 24px;
-        color: #008080;
+        color: teal;
         border-radius: 50px;
         padding: 15px 10px;
     }
@@ -546,91 +571,18 @@ ol{
     }
 
     .navbar_Item_active.activated {
-        background-color: #008080;
+        background-color: teal;
         color: white;
     }
 }
 
+/* Common code for both tablet and desktop - navbar*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet code */
-/* @media screen and (min-width: 741px){
-
-    .pageGridContainer
-    {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 80px auto 80px;
-
+/* reduced motion media query */
+@media (prefers-reduced-motion: reduce) {
+    .html {
+      animation: none;
+      scroll-behavior: auto;
     }
-
-        .projectContainer{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 3;
-        row-gap: 50px;
-    }
-
-    .project1{
-        grid-row: span 1;
-    }
-    .project2{
-        grid-row: span 2;
-    }
-    .project3{
-        grid-row: span 3;
-    }
-    
-    header{
-         grid-column: span 2;
-    }
-    
-    aside{
-        grid-column: span 1;
-    }
-    
-    main{
-        grid-column: 2 / span 1;
-        background-color: aquamarine;
-    }
-    
-    footer{
-        grid-column: span 2;
-        background-color: blanchedalmond;
-    }
-    
-    nav{
-        position:sticky;
-    }
-    
-    a.burgermenu{
-        display: none;
-    }
-    
-    nav ul li{
-        display: inline;
-    }
-    nav ul li a {
-        color: #008080;
-        border-radius: 50px;
-      }
-    
-    nav ul{
-        display: block;
-    }
-} */
-/* Tablet code */
+  }
+/* reduced motion media query */
