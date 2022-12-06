@@ -57,8 +57,10 @@
         </aside>
         <main id="main">
             <div class="introduction">
+                <section id="toast"></section>
                 <figure class="homeEnvImage">
-                    <img src="images/index_bg_naturalEnv.svg" alt="Geometric line drawing of trees, sun and sky">
+                    <img src="images/index_bg_naturalEnv.svg" alt="Geometric line drawing of trees, sun and sky"
+                        id="weatherReport">
                     <figcaption><small>The natural environment has played an important role in the formation of my
                             personality. </small>
                     </figcaption>
@@ -83,12 +85,12 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJT90FHLW8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-GJT90FHLW8');
     </script>
     <script src="https://kit.fontawesome.com/bdfd2379d9.js" crossorigin="anonymous"></script>
